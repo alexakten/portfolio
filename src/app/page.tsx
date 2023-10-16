@@ -123,7 +123,7 @@ export default function Home() {
           </button> */}
         </div>
 
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-8">
+        <div className="flex flex-col md:flex-row items-end md:items-center md:justify-end gap-2 md:gap-8">
           <a
             href="https://www.instagram.com/alexakten/"
             target="_blank"
@@ -139,7 +139,7 @@ export default function Home() {
           </a>
         </div>
       </nav>
-      <div className="px-4 xs:px-10 text-3xl max-w-96 w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="bg-red-500 px-4 text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1>
           hey. i’m alex.
           <br />
