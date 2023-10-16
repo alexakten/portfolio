@@ -6,7 +6,6 @@ export default function Home() {
   const [theme, setTheme] = useState("dark"); // Default theme is dark
   const [viewportHeight, setViewportHeight] = useState(0);
 
-
   const toggleTheme = () => {
     if (theme === "light") {
       setTheme("dark");
@@ -38,14 +37,13 @@ export default function Home() {
   useEffect(() => {
     const setVH = () => {
       setViewportHeight(window.innerHeight);
-    }
-  
+    };
+
     setVH();
-  
-    window.addEventListener('resize', setVH);
-    return () => window.removeEventListener('resize', setVH);
+
+    window.addEventListener("resize", setVH);
+    return () => window.removeEventListener("resize", setVH);
   }, []);
-  
 
   const moveIrisToMouse = (mouseX: number, mouseY: number) => {
     const leftIris = document.getElementById("leftIris");
@@ -165,32 +163,36 @@ export default function Home() {
       </div>
       <div className="flex justify-between items-end">
         <div>
-          <ul className="flex flex-col md:flex-row gap-2 md:gap-8">
-            / projects /
-            <li>
-              <a
-                href="https://www.kindredlab.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                kindred lab
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://planetary-alexakten.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                solarity
-              </a>
-            </li>
-            <li>
-              <a href="#blixt">blixt</a>
-            </li>
-            <li>
-              <a href="#airspace">airspace</a>
-            </li>
+          <ul className="grid gap-12 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-2">
+            <div className="flex flex-col gap-2 md:flex md:flex-row">
+              <li>/ projects /</li>
+              <li>
+                <a
+                  href="https://www.kindredlab.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  kindred lab
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://planetary-alexakten.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  solarity
+                </a>
+              </li>
+            </div>
+            <div className="flex flex-col gap-2 md:flex md:flex-row">
+              <li>
+                <a href="#blixt">blixt</a>
+              </li>
+              <li>
+                <a href="#airspace">airspace</a>
+              </li>
+            </div>
           </ul>
         </div>
         <p>© 2023</p>
