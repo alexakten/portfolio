@@ -45,6 +45,16 @@ export default function Home() {
     return () => window.removeEventListener("resize", setVH);
   }, []);
 
+  useEffect(() => {
+    const preventDefault = (e: TouchEvent) => e.preventDefault();
+
+    document.addEventListener("touchmove", preventDefault, { passive: false });
+
+    return () => {
+      document.removeEventListener("touchmove", preventDefault);
+    };
+  }, []);
+
   const moveIrisToMouse = (mouseX: number, mouseY: number) => {
     const leftIris = document.getElementById("leftIris");
     const rightIris = document.getElementById("rightIris");
