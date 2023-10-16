@@ -140,9 +140,6 @@ export default function Home() {
           <button type="button" onClick={toggleTheme}>
             {theme === "light" ? "[ ◖ dark ]" : "[ ● light ]"}
           </button>
-          {/* <button type="button" onClick={toggleTheme}>
-            {theme === "dark" ? "[dark]" : " dark "}
-          </button> */}
         </div>
 
         <div className="flex flex-col md:flex-row items-end md:items-center md:justify-end gap-2 md:gap-8">
