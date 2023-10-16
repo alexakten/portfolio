@@ -3,7 +3,9 @@
 import { useState, useRef, useEffect } from "react";
 
 export default function Home() {
-  const [theme, setTheme] = useState("dark"); // Default theme is light
+  const [theme, setTheme] = useState("dark"); // Default theme is dark
+  const [viewportHeight, setViewportHeight] = useState(0);
+
 
   const toggleTheme = () => {
     if (theme === "light") {
@@ -32,6 +34,18 @@ export default function Home() {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  useEffect(() => {
+    const setVH = () => {
+      setViewportHeight(window.innerHeight);
+    }
+  
+    setVH();
+  
+    window.addEventListener('resize', setVH);
+    return () => window.removeEventListener('resize', setVH);
+  }, []);
+  
 
   const moveIrisToMouse = (mouseX: number, mouseY: number) => {
     const leftIris = document.getElementById("leftIris");
@@ -62,7 +76,7 @@ export default function Home() {
 
   return (
     <main
-      style={{ userSelect: "none" }}
+      style={{ userSelect: "none", height: `${viewportHeight}px` }}
       className={`flex flex-col justify-between w-screen h-screen overflow-y-hidden px-4 xs:px-10 py-6 ${
         theme === "light"
           ? "bg-slate-100 text-black"
