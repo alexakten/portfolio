@@ -116,7 +116,7 @@ export default function Home() {
         </svg>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <button type="button" onClick={toggleTheme}>
-            {theme === "light" ? "[ ● dark ]" : "[ ○ light ]"}
+            {theme === "light" ? "[ ◖ dark ]" : "[ ● light ]"}
           </button>
           {/* <button type="button" onClick={toggleTheme}>
             {theme === "dark" ? "[dark]" : " dark "}
