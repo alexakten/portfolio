@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  /* src: url('/fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype'); */
+  src: url('/fonts/NHaasGroteskTXPro-65Md.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +26,7 @@
 }
 
 body {
+  font-family: 'Neue Haas Grotesk', sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

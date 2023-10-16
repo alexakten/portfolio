@@ -1,113 +1,122 @@
-import Image from 'next/image'
+"use client";
+
+import { useState } from "react";
 
 export default function Home() {
+  const [theme, setTheme] = useState("light"); // Default theme is light
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+    <main
+      className={`flex flex-col justify-between w-screen h-screen px-10 py-8 ${
+        theme === "light"
+          ? "bg-slate-100 text-black"
+          : "bg-neutral-950 text-white"
+      }`}
+    >
+      <nav className="flex justify-between relative">
+        <svg
+          width="45"
+          height="63"
+          viewBox="0 0 45 63"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23.0915 13.209L27.5708 15.8281L18.3576 31.5846L27.3952 36.8691L25.1458 40.7161L11.6289 32.8124L23.0915 13.209Z"
+            fill={theme === "light" ? "black" : "white"}
+          />
+          <path
+            d="M35.8738 40.5294L36.8704 45.6216L18.9579 49.1276L20.9688 59.4018L16.5955 60.2578L13.5879 44.8913L35.8738 40.5294Z"
+            fill={theme === "light" ? "black" : "white"}
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M7.86863 21.9631C12.2144 21.9631 15.7373 18.4402 15.7373 14.0945C15.7373 9.74874 12.2144 6.22583 7.86863 6.22583C3.52291 6.22583 0 9.74874 0 14.0945C0 18.4402 3.52291 21.9631 7.86863 21.9631ZM7.86947 16.9868C9.46685 16.9868 10.7618 15.6919 10.7618 14.0945C10.7618 12.4971 9.46685 11.2022 7.86947 11.2022C6.27209 11.2022 4.97716 12.4971 4.97716 14.0945C4.97716 15.6919 6.27209 16.9868 7.86947 16.9868Z"
+            fill={theme === "light" ? "black" : "white"}
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M36.2026 15.7373C40.5483 15.7373 44.0712 12.2144 44.0712 7.86863C44.0712 3.52291 40.5483 0 36.2026 0C31.8569 0 28.334 3.52291 28.334 7.86863C28.334 12.2144 31.8569 15.7373 36.2026 15.7373ZM36.348 10.7611C37.9454 10.7611 39.2403 9.46616 39.2403 7.86878C39.2403 6.2714 37.9454 4.97647 36.348 4.97647C34.7506 4.97647 33.4557 6.2714 33.4557 7.86878C33.4557 9.46616 34.7506 10.7611 36.348 10.7611Z"
+            fill={theme === "light" ? "black" : "white"}
+          />
+        </svg>
+        <div className="flex flex-row gap-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <button type="button" onClick={toggleTheme}>
+            {theme === "light" ? "[ light ]" : "[ dark ]"}
+          </button>
+          {/* <button type="button" onClick={toggleTheme}>
+            {theme === "dark" ? "[dark]" : " dark "}
+          </button> */}
+        </div>
+
+        <div className="flex flex-row items-center gap-8">
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://www.instagram.com/alexakten/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+            <button type="button">instagram</button>
+          </a>
+          <a href="mailto:alex.akten@outlook.com">
+            <button type="button">mail</button>
+          </a>
+          <a href="tel:+46709136514">
+            <button type="button">phone</button>
           </a>
         </div>
+      </nav>
+      <div className="text-3xl max-w-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <h1>
+          hey. i’m alex.
+          <br />
+          <span style={{ paddingLeft: 105 }}>i’m a (designer)</span>
+          <br /> &amp; &lt;/developer/&gt; based <br />
+          in <br />
+          stockholm, sweden.
+        </h1>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex justify-between items-end">
+        <div>
+          <ul className="flex flex-row gap-8">
+            / projects /
+            <li>
+              <a
+                href="https://www.kindredlab.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                kindred lab
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://planetary-alexakten.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                solarity
+              </a>
+            </li>
+            <li>
+              <a href="#blixt">blixt</a>
+            </li>
+            <li>
+              <a href="#airspace">airspace</a>
+            </li>
+          </ul>
+        </div>
+        <p>© 2023</p>
       </div>
     </main>
-  )
+  );
 }
