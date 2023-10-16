@@ -114,7 +114,7 @@ export default function Home() {
             fill={theme === "light" ? "white" : "black"}
           />
         </svg>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute md:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2">
           <button type="button" onClick={toggleTheme}>
             {theme === "light" ? "[ ◖ dark ]" : "[ ● light ]"}
           </button>
@@ -123,7 +123,7 @@ export default function Home() {
           </button> */}
         </div>
 
-        <div className="flex flex-row items-center gap-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-8">
           <a
             href="https://www.instagram.com/alexakten/"
             target="_blank"
@@ -139,7 +139,7 @@ export default function Home() {
           </a>
         </div>
       </nav>
-      <div className="text-3xl max-w-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="bg-red-500 text-3xl w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1>
           hey. i’m alex.
           <br />
@@ -151,7 +151,7 @@ export default function Home() {
       </div>
       <div className="flex justify-between items-end">
         <div>
-          <ul className="flex flex-row gap-8">
+          <ul className="flex flex-col md:flex-row gap-2 md:gap-8">
             / projects /
             <li>
               <a
