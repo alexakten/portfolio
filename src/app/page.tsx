@@ -63,7 +63,7 @@ export default function Home() {
   return (
     <main
       style={{ userSelect: "none" }}
-      className={`flex flex-col justify-between w-screen h-screen px-4 xs:px-10 py-6 ${
+      className={`flex flex-col justify-between w-screen h-screen overflow-y-hidden px-4 xs:px-10 py-6 ${
         theme === "light"
           ? "bg-slate-100 text-black"
           : "bg-neutral-950 text-white"
