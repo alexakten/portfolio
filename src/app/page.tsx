@@ -139,7 +139,7 @@ export default function Home() {
           </a>
         </div>
       </nav>
-      <div className="bg-red-500 px-4 text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="px-4 text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1>
           hey. i’m alex.
           <br />
