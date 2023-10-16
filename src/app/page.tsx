@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 
 export default function Home() {
-  const [theme, setTheme] = useState("light"); // Default theme is light
+  const [theme, setTheme] = useState("dark"); // Default theme is light
 
   const toggleTheme = () => {
     if (theme === "light") {
