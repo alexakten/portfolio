@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "alex aktén",
-  description: "(designer) & </developer>",
+  description: "designer & developer based in stockholm, sweden.",
 };
 
 export default function RootLayout({
