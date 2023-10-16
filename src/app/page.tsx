@@ -164,7 +164,7 @@ export default function Home() {
       <div className="flex justify-between items-end">
         <div>
           <ul className="grid gap-12 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-2">
-            <div className="flex flex-col gap-2 md:flex md:flex-row">
+            <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
               <li>/ projects /</li>
               <li>
                 <a
@@ -185,7 +185,7 @@ export default function Home() {
                 </a>
               </li>
             </div>
-            <div className="flex flex-col gap-2 md:flex md:flex-row">
+            <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
               <li>
                 <a href="#blixt">blixt</a>
               </li>
