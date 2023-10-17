@@ -197,7 +197,13 @@ export default function Home() {
                 <a href="#blixt">blixt</a>
               </li>
               <li>
-                <a href="#airspace">airspace</a>
+                <a
+                  href="https://airspace-one.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  airspace
+                </a>
               </li>
             </div>
           </ul>
