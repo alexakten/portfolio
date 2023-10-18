@@ -194,7 +194,13 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
               <li>
-                <a href="#blixt">blixt</a>
+                <a
+                  href="https://strom-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  strōm
+                </a>
               </li>
               <li>
                 <a
