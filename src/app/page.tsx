@@ -195,7 +195,7 @@ export default function Home() {
             <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
               <li>
                 <a
-                  href="https://strom-five.vercel.app/"
+                  href="https://strom-alexakten.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -204,7 +204,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://airspace-one.vercel.app/"
+                  href="https://airspace-alexakten.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
