@@ -5,10 +5,17 @@
 
 @font-face {
   font-family: 'Neue Haas Grotesk';
-  /* src: url('/fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype'); */
+  src: url('/fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400; /* normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
   src: url('/fonts/NHaasGroteskTXPro-65Md.ttf') format('truetype');
   font-display: swap;
-  font-weight: normal;
+  font-weight: 500; /* medium weight for example */
   font-style: normal;
 }
 

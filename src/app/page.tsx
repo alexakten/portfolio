@@ -136,13 +136,13 @@ export default function Home() {
             fill={theme === "light" ? "white" : "black"}
           />
         </svg>
-        <div className="absolute md:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2">
+        <div className="font-medium absolute md:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2">
           <button type="button" onClick={toggleTheme}>
             {theme === "light" ? "[ ◖ dark ]" : "[ ● light ]"}
           </button>
         </div>
 
-        <div className="flex flex-col md:flex-row items-end md:items-center md:justify-end gap-2 md:gap-8">
+        <div className="font-medium flex flex-col md:flex-row items-end md:items-center md:justify-end gap-2 md:gap-8">
           <a
             href="https://www.instagram.com/alexakten/"
             target="_blank"
@@ -168,7 +168,7 @@ export default function Home() {
           stockholm, sweden.
         </h1>
       </div>
-      <div className="flex justify-between items-end">
+      <div className="font-medium flex justify-between items-end">
         <div>
           <ul className="grid gap-12 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-2">
             <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
