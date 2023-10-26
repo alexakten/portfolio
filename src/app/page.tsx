@@ -184,7 +184,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://planetary-alexakten.vercel.app/"
+                  href="https://solarity-alexakten.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
