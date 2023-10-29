@@ -160,9 +160,9 @@ export default function Home() {
           <a href="mailto:alex.akten@outlook.com">
             <button type="button">mail</button>
           </a>
-          <a href="tel:+46709136514">
+          {/* <a href="tel:+46709136514">
             <button type="button">tel</button>
-          </a>
+          </a> */}
         </div>
       </nav>
       <div className="px-4 font-medium text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
