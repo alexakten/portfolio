@@ -148,13 +148,20 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button type="button">instagram</button>
+            <button type="button">ig</button>
+          </a>
+          <a
+            href="https://twitter.com/alexakten"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button type="button">x</button>
           </a>
           <a href="mailto:alex.akten@outlook.com">
             <button type="button">mail</button>
           </a>
           <a href="tel:+46709136514">
-            <button type="button">phone</button>
+            <button type="button">tel</button>
           </a>
         </div>
       </nav>
