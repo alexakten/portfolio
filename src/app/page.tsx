@@ -91,6 +91,7 @@ export default function Home() {
           : "bg-neutral-950 text-white"
       }`}
     >
+      {/* ——————————————————————————————————————————————————————————————————— */}
       <nav className="flex justify-between relative">
         <svg
           ref={svgRef}
@@ -148,14 +149,14 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button type="button">ig</button>
+            <button type="button">instagram</button>
           </a>
           <a
             href="https://twitter.com/alexakten"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button type="button">x</button>
+            <button type="button">twitter</button>
           </a>
           <a href="mailto:alex.akten@outlook.com">
             <button type="button">mail</button>
@@ -165,6 +166,7 @@ export default function Home() {
           </a> */}
         </div>
       </nav>
+      {/* ——————————————————————————————————————————————————————————————————— */}
       <div className="px-4 font-medium text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1>
           hey. i’m alex.
@@ -175,6 +177,7 @@ export default function Home() {
           stockholm, sweden.
         </h1>
       </div>
+      {/* ——————————————————————————————————————————————————————————————————— */}
       <div className="font-medium flex justify-between items-end">
         <div>
           <ul className="grid gap-12 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-2">
@@ -223,6 +226,7 @@ export default function Home() {
         </div>
         <p>© 2023</p>
       </div>
+      {/* ——————————————————————————————————————————————————————————————————— */}
     </main>
   );
 }
