@@ -214,11 +214,11 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://airspace-alexakten.vercel.app/"
+                  href="https://mendly.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  airspace
+                  mendly
                 </a>
               </li>
             </div>
