@@ -185,7 +185,7 @@ export default function Home() {
               <li>/ projects /</li>
               <li>
                 <a
-                  href="https://www.kindredlab.io/"
+                  href="https://kindredlab.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
