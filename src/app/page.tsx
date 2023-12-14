@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Cube from "../../components/cube.js";
 
 export default function Home() {
   const [theme, setTheme] = useState("dark"); // Default theme is dark
@@ -85,7 +86,7 @@ export default function Home() {
   return (
     <main
       style={{ userSelect: "none", height: `${viewportHeight}px` }}
-      className={`flex flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-4 xs:px-10 py-6 ${
+      className={`flex flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-3 xs:px-10 py-6 ${
         theme === "light"
           ? "bg-slate-100 text-black"
           : "bg-neutral-950 text-white"
@@ -180,7 +181,7 @@ export default function Home() {
       {/* ——————————————————————————————————————————————————————————————————— */}
       <div className="font-medium flex justify-between items-end">
         <div>
-          <ul className="grid gap-12 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-2">
+          <ul className="grid gap-12 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-3">
             <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
               <li>/ projects /</li>
               <li>
@@ -222,11 +223,25 @@ export default function Home() {
                 </a>
               </li>
             </div>
+            <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
+              <li>
+                <a
+                  href="https://tasktree.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  tasktree
+                </a>
+              </li>
+            </div>
           </ul>
         </div>
-        <p>© 2023</p>
+        <p className="hidden sm:block">© 2023</p>
       </div>
       {/* ——————————————————————————————————————————————————————————————————— */}
+      {/* <div className="absolute left-0">
+        <Cube />
+      </div> */}
     </main>
   );
 }
