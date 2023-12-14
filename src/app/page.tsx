@@ -181,7 +181,7 @@ export default function Home() {
       {/* ——————————————————————————————————————————————————————————————————— */}
       <div className="font-medium flex justify-between items-end">
         <div>
-          <ul className="grid gap-12 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-3">
+          <ul className="grid gap-8 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-3">
             <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
               <li>/ projects</li>
               <li>
