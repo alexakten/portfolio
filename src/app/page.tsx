@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Cube from "../../components/cube.js";
 
 export default function Home() {
   const [theme, setTheme] = useState("dark"); // Default theme is dark
@@ -140,7 +139,7 @@ export default function Home() {
         </svg>
         <div className="font-medium absolute md:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2">
           <button type="button" onClick={toggleTheme}>
-            {theme === "light" ? "[ ◖ dark ]" : "[ ● light ]"}
+            {theme === "light" ? "◖ dark" : "● light"}
           </button>
         </div>
 
@@ -245,7 +244,7 @@ export default function Home() {
             </div>
           </ul>
         </div>
-        <p className="hidden sm:block">© 2023</p>
+        <p className="hidden sm:block">© 2024</p>
       </div>
       {/* ——————————————————————————————————————————————————————————————————— */}
       {/* <div className="absolute left-0">
