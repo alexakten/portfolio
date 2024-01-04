@@ -14,7 +14,7 @@ const blogPosts = [
 
     But now, I might've find something that I'm truly excited to build. And no, it's not another project manager. It's not a shitty to-do list app. It's a problem that is difficult enough that I yet have no idea how to really solve.  And that is exciting to me. It's not just copying someone else's idea either, like I've done with many of my previous projects. It's a space where I truly have to be innovative and learn a lot before I know what to even build. But just contributing to this space somehow is something that really motivates me.
     
-    The space is climate tech, and helping reduce deforestation in Brazil.
+    The space is climate tech, and helping reduce deforestation in Brazil. I want to contribute somehow to making not cutting down trees more profitable than using the land for agriculture, which is a big reason for deforestation. If successful, there is a possibility to create a win-win-win situation for landowners, investors (companies emitting gases wanting to offset their emissions), and the planet. This is just an idea for now, but I have to start somewhere.
 
 
     `,
