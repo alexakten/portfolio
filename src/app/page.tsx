@@ -93,11 +93,11 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://mendly.app"
+                  href="https://tasktree.co/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  mendly
+                  tasktree
                 </a>
               </li>
             </div>
@@ -109,15 +109,6 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   airbon
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://tasktree.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  tasktree
                 </a>
               </li>
             </div>
