@@ -20,7 +20,7 @@ export default function Blog() {
       }`}
     >
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
-      <div className="flex py-40 overflow-auto w-full h-full">
+      <div className="flex xs:py-40 overflow-auto w-full h-full">
         {blogPosts.length === 0 ? (
           <h2 className="text-3xl font-medium">No blog posts</h2>
         ) : (
