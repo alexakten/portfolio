@@ -121,20 +121,22 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
         className="flex flex-col justify-center items-center lg:hidden z-50" // Keep the button in its place
       >
         <span
-          className={`bg-white block transition-all duration-300 ease-out 
-    h-0.5 w-6 rounded-sm ${
-      isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-    }`}
+          className={`block transition-all duration-300 ease-out 
+      h-0.5 w-6 rounded-sm ${
+        isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+      } ${theme === "light" ? "bg-black" : "bg-white"}`} // Change color based on theme
         ></span>
         <span
-          className={`bg-white block transition-all duration-300 ease-out 
-    h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"}`}
+          className={`block transition-all duration-300 ease-out 
+      h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"} ${
+            theme === "light" ? "bg-black" : "bg-white"
+          }`} // Change color based on theme
         ></span>
         <span
-          className={`bg-white block transition-all duration-300 ease-out 
-    h-0.5 w-6 rounded-sm ${
-      isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-    }`}
+          className={`block transition-all duration-300 ease-out 
+      h-0.5 w-6 rounded-sm ${
+        isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+      } ${theme === "light" ? "bg-black" : "bg-white"}`} // Change color based on theme
         ></span>
       </button>
 
