@@ -142,7 +142,7 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
       <div
         className={`${
           isOpen ? "flex" : "hidden"
-        } gap-4 absolute font-medium flex-col items-end py-2 rounded-md z-40`}
+        } gap-2 absolute font-medium flex-col items-end py-2 rounded-md z-40`}
         style={{ top: "100%", right: "0" }} // Position the menu below the button
       >
         <a
