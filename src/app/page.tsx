@@ -5,20 +5,20 @@ import { useState, useRef, useEffect, useContext } from "react";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
-  const [viewportHeight, setViewportHeight] = useState(0);
+  // const [viewportHeight, setViewportHeight] = useState(0);
 
   const { theme, toggleTheme } = useContext(ThemeContext);
 
-  useEffect(() => {
-    const setVH = () => {
-      setViewportHeight(window.innerHeight);
-    };
+  // useEffect(() => {
+  //   const setVH = () => {
+  //     setViewportHeight(window.innerHeight);
+  //   };
 
-    setVH();
+  //   setVH();
 
-    window.addEventListener("resize", setVH);
-    return () => window.removeEventListener("resize", setVH);
-  }, []);
+  //   window.addEventListener("resize", setVH);
+  //   return () => window.removeEventListener("resize", setVH);
+  // }, []);
 
   useEffect(() => {
     const preventDefault = (e: TouchEvent) => e.preventDefault();
@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <main
-      style={{ userSelect: "none", height: `${viewportHeight}px` }}
+      style={{ userSelect: "none", height: "100svh" }}
       className={`flex flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-3 xs:px-10 py-6 ${
         theme === "light"
           ? "bg-slate-100 text-black"
