@@ -5,20 +5,7 @@ import { useState, useRef, useEffect, useContext } from "react";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
-  // const [viewportHeight, setViewportHeight] = useState(0);
-
   const { theme, toggleTheme } = useContext(ThemeContext);
-
-  // useEffect(() => {
-  //   const setVH = () => {
-  //     setViewportHeight(window.innerHeight);
-  //   };
-
-  //   setVH();
-
-  //   window.addEventListener("resize", setVH);
-  //   return () => window.removeEventListener("resize", setVH);
-  // }, []);
 
   useEffect(() => {
     const preventDefault = (e: TouchEvent) => e.preventDefault();
