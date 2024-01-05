@@ -3,10 +3,11 @@ import React, { useState, useRef, useEffect } from "react";
 
 interface NavbarProps {
   onThemeToggle: () => void;
-  theme: "dark" | "light"; // Add theme prop
+  theme: string;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
+  
   const svgRef = useRef<SVGSVGElement | null>(null); // Added type for ref
 
   useEffect(() => {
@@ -118,7 +119,7 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
       <button
         aria-label="menu"
         onClick={handleClick}
-        className="flex flex-col justify-center items-center lg:hidden z-50" // Keep the button in its place
+        className="flex flex-col justify-center items-center z-50" // Keep the button in its place
       >
         <span
           className={`block transition-all duration-300 ease-out 

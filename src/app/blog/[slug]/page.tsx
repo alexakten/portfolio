@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { usePathname } from "next/navigation";
 import Navbar from "@/app/components/Navbar";
 import blogPosts from "@/app/blogPosts";
+import ThemeContext from "@/app/components/ThemeContext";
 
 interface BlogPost {
   title: string;
@@ -14,7 +15,7 @@ interface BlogPost {
 }
 
 export default function Post() {
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [post, setPost] = useState<BlogPost | null>(null);
   const pathname = usePathname();
 
@@ -28,9 +29,9 @@ export default function Post() {
     }
   }, [pathname]);
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
+  // const toggleTheme = () => {
+  //   setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  // };
 
   if (!post) {
     return;

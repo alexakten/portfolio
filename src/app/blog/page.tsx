@@ -1,15 +1,16 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Navbar from "../components/Navbar";
 import blogPosts from "../blogPosts";
+import ThemeContext from "../components/ThemeContext";
 
 export default function Blog() {
-  const [theme, setTheme] = useState<"dark" | "light">("dark"); // Default theme is dark
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
+  // const toggleTheme = () => {
+  //   setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  // };
 
   return (
     <main

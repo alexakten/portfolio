@@ -1,17 +1,13 @@
 "use client";
-
+import ThemeContext from "./components/ThemeContext";
 import Link from "next/link";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
   const [viewportHeight, setViewportHeight] = useState(0);
 
-  const [theme, setTheme] = useState<"dark" | "light">("dark"); // Default theme is dark
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   useEffect(() => {
     const setVH = () => {
