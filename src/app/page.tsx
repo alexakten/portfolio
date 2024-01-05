@@ -1,7 +1,6 @@
 "use client";
 import ThemeContext from "./components/ThemeContext";
-import Link from "next/link";
-import { useState, useRef, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
