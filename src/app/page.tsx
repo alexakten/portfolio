@@ -40,63 +40,62 @@ export default function Home() {
       </div>
       {/* ——————————————————————————————————————————————————————————————————— */}
       <div className="font-medium flex justify-between items-end">
-        <div>
-          <ul className="grid gap-8 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-3">
-            <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
-              <li>/ projects</li>
-              <li>
-                <a
-                  href="https://www.kindredlab.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:translate-y-1"
-                >
-                  kindred lab
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://solarity-alexakten.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  solarity
-                </a>
-              </li>
+        <div className="grid gap-8 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-3">
+          <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
+            <div className="font-medium">/ projects</div>
+            <div>
+              <a
+                href="https://www.kindredlab.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:translate-y-1"
+              >
+                kindred lab
+              </a>
             </div>
-            <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
-              <li>
-                <a
-                  href="https://strom-alexakten.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  strōm
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://tasktree.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  tasktree
-                </a>
-              </li>
+            <div>
+              <a
+                href="https://solarity-alexakten.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                solarity
+              </a>
             </div>
-            <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
-              <li>
-                <a
-                  href="https://airbon.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  airbon
-                </a>
-              </li>
+          </div>
+          <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
+            <div>
+              <a
+                href="https://strom-alexakten.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                strōm
+              </a>
             </div>
-          </ul>
+            <div>
+              <a
+                href="https://tasktree.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                tasktree
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
+            <div>
+              <a
+                href="https://airbon.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                airbon
+              </a>
+            </div>
+          </div>
         </div>
+
         <p className="hidden sm:block">© 2024</p>
       </div>
       {/* ——————————————————————————————————————————————————————————————————— */}
