@@ -67,6 +67,7 @@ export default function Home() {
                   href="https://www.kindredlab.io/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:translate-y-1"
                 >
                   kindred lab
                 </a>

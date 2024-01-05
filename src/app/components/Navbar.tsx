@@ -54,6 +54,12 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
     moveIris(rightIris, 36.3484, 7.86875, 4.97632);
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="flex justify-between relative">
       <Link href={"/"}>
@@ -103,33 +109,79 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
         </svg>
       </Link>
 
-      <div className="font-medium absolute md:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2">
+      <div className="font-medium absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <button type="button" onClick={onThemeToggle}>
           {theme === "light" ? "◖ dark" : "● light"}
         </button>
       </div>
 
-      <div className="font-medium flex flex-col md:flex-row items-end md:items-center md:justify-end gap-2 md:gap-8">
+      <button
+        aria-label="menu"
+        onClick={handleClick}
+        className="flex flex-col justify-center items-center lg:hidden z-50" // Keep the button in its place
+      >
+        <span
+          className={`bg-white block transition-all duration-300 ease-out 
+    h-0.5 w-6 rounded-sm ${
+      isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+    }`}
+        ></span>
+        <span
+          className={`bg-white block transition-all duration-300 ease-out 
+    h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"}`}
+        ></span>
+        <span
+          className={`bg-white block transition-all duration-300 ease-out 
+    h-0.5 w-6 rounded-sm ${
+      isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+    }`}
+        ></span>
+      </button>
+
+      {/* Menu items container */}
+      <div
+        className={`${
+          isOpen ? "flex" : "hidden"
+        } gap-4 absolute font-medium flex-col items-end py-2 rounded-md z-40`}
+        style={{ top: "100%", right: "0" }} // Position the menu below the button
+      >
         <a
           href="https://www.instagram.com/alexakten/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button type="button">instagram</button>
+          <button type="button" className="hover:-translate-x-1">
+            instagram
+          </button>
+        </a>
+        <a
+          href="https://www.threads.net/@alexakten"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button type="button" className="hover:-translate-x-1">
+            threads
+          </button>
         </a>
         <a
           href="https://twitter.com/alexakten"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button type="button">twitter</button>
-        </a>
-        <a href="mailto:alex.akten@outlook.com">
-          <button type="button">mail</button>
+          <button type="button" className="hover:-translate-x-1">
+            twitter
+          </button>
         </a>
         <Link href="/blog">
-          <button type="button">blog</button>
+          <button type="button" className="hover:-translate-x-1">
+            blog
+          </button>
         </Link>
+        <a href="mailto:alex.akten@outlook.com">
+          <button type="button" className="hover:-translate-x-1">
+            mail
+          </button>
+        </a>
       </div>
     </nav>
   );
