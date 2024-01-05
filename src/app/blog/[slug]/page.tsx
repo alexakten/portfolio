@@ -57,7 +57,7 @@ export default function Post() {
       }`}
     >
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
-      <div className="flex xs:py-40 overflow-auto justify-center w-full h-full">
+      <div className="flex py-16 xs:py-40 overflow-auto justify-center w-full h-full">
         <article className="flex w-full flex-col max-w-2xl gap-4">
           <Link href="/blog">
             <button className="font-medium">← Back</button>
