@@ -21,7 +21,7 @@ export default function Blog() {
       }`}
     >
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
-      <div className="flex py-16 xs:py-40 overflow-auto w-full h-full">
+      <div className="flex flex-col py-16 xs:py-40 overflow-auto w-full h-full">
         {blogPosts.length === 0 ? (
           <h2 className="text-3xl font-medium">No blog posts</h2>
         ) : (
@@ -29,7 +29,7 @@ export default function Blog() {
             {blogPosts.map((post, index) => (
               <li key={index}>
                 <Link href={`/blog/${post.slug}`}>
-                  <h2 className="text-3xl font-medium p-2">{post.title}</h2>
+                  <h2 className="text-3xl font-medium py-2">{post.title}</h2>
                 </Link>
               </li>
             ))}
