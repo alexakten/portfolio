@@ -7,13 +7,7 @@
 // },
 
 const blogPosts = [
-  {
-  title: "the pull of the arrival fallacy.",
-  date: "Jan 7, 2024",
-  content: `
-  `,
-  slug: "point-of-building",
-},
+
   {
     title: "making medicine, not vitamins.",
     date: "Jan 7, 2024",
