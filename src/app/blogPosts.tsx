@@ -32,7 +32,7 @@ const blogPosts = [
     
     The space is climate tech, and helping farmers in Brazil. I want to contribute somehow to helping farmers implement sustainable farming practices that generate carbon credits. If successful, there is a possibility to create a win-win-win situation for farmers, investors (companies emitting gases wanting to offset their emissions), and the planet. This is just an idea for now, but I have to start somewhere.
 
-    There are so many challenges that need to be solved in order for a system like carbon credits to work. Measuring what the effects are, verifying them, and then keeping carbon from escaping back into the atmosphere, there are so many places where I could contribute.
+    There are so many challenges that need to be solved in order for a system like carbon credits to work. Measuring what the effects are, verifying them, and then keeping carbon from escaping back into the atmosphere, there are so many places where I could contribute. There's a lot that needs to be fixed, but I am optimistic about it.
 
     `,
 
