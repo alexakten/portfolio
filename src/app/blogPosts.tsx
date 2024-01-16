@@ -7,7 +7,6 @@
 // },
 
 const blogPosts = [
-
   {
     title: "making medicine, not vitamins.",
     date: "Jan 7, 2024",
