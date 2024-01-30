@@ -66,11 +66,11 @@ export default function Home() {
           <div className="flex flex-col gap-2 md:gap-8 md:flex md:flex-row">
             <div>
               <a
-                href="https://strom-alexakten.vercel.app/"
+                href="https://www.mendly.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                strōm
+                mendly
               </a>
             </div>
             <div>
