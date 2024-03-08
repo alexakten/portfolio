@@ -34,11 +34,11 @@ export default function Model () {
 
    // Define breakpoints and corresponding scales
    const breakpoints = [
-    { width: 1200, groupScale: 1.5 },
-    { width: 992, groupScale: 1.5 },
-    { width: 768, groupScale: 1.5 },
-    { width: 576, groupScale: 1.5 },
-    { width: 0, groupScale: 3 }, // default to the smallest size
+    { height: 1200, groupScale: 1.8 },
+    { height: 992, groupScale: 1.8 },
+    { height: 768, groupScale: 1.5 },
+    { heiht: 576, groupScale: 0.8 },
+    { height: 0, groupScale: 3 }, // default to the smallest size
   ];
 
     // Update scale based on window width
