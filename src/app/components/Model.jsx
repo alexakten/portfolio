@@ -33,7 +33,7 @@ export default function Model () {
   }
 
   const fontSize = 0.18
-  const lineHeight = 0.45 // Adjust the line height as needed
+  const lineHeight = 0.43 // Adjust the line height as needed
 
   return (
     <group scale={0.92}>
