@@ -27,7 +27,7 @@ export default function Home() {
       className={`flex relative flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-3 xs:px-10 py-6 ${
         theme === "light"
           ? "bg-slate-100 text-black"
-          : "bg-neutral-950 text-white"
+          : "bg-black text-white"
       }`}
     >
       {/* ——————————————————————————————————————————————————————————————————— */}
