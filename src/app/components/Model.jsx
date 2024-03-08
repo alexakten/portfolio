@@ -12,16 +12,22 @@ export default function Model () {
   })
 
   const materialProps = useControls({
-    thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
-    roughness: { value: 0, min: 0, max: 1, step: 0.1 },
-    transmission: { value: 1, min: 0, max: 1, step: 0.1 },
-    ior: { value: 1.2, min: 0, max: 3, step: 0.1 },
-    chromaticAberration: { value: 0.02, min: 0, max: 1 },
-    backside: { value: true }
+    // thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
+    // roughness: { value: 0, min: 0, max: 1, step: 0.1 },
+    // transmission: { value: 1, min: 0, max: 1, step: 0.1 },
+    // ior: { value: 1.2, min: 0, max: 3, step: 0.1 },
+    // chromaticAberration: { value: 0.02, min: 0, max: 1 },
+    // backside: { value: true },
+    thickness: 0.2,
+      roughness: 0,
+      transmission: 1,
+      ior: 1,
+      chromaticAberration: 0.02,
+      backside: true,
   })
 
   const fontSize = 0.18
-  const lineHeight = 0.44// Adjust the line height as needed
+  const lineHeight = 0.45 // Adjust the line height as needed
 
   return (
     <group>
