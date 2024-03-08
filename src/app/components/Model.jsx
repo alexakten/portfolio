@@ -10,8 +10,8 @@ export default function Model () {
 
 
   useFrame(() => {
-    mesh.current.rotation.x += 0.003
-    mesh.current.rotation.y += 0.003
+    mesh.current.rotation.x += 0.004
+    mesh.current.rotation.y += 0.004
   })
 
   // const materialProps = useControls({
