@@ -25,10 +25,10 @@ export default function Model () {
 
   const materialProps = {
     thickness: 0.25,
-    roughness: 0.1,
+    roughness: 0.05,
     transmission: 1,
     ior: 1,
-    chromaticAberration: 0.02,
+    chromaticAberration: 0.015,
     backside: true
   }
 
@@ -78,8 +78,8 @@ export default function Model () {
       >
         stockholm, sweden.
       </Text>
-      <mesh ref={mesh} scale={1.6}>
-        <boxGeometry />
+      <mesh ref={mesh} scale={1.8}>
+        <torusGeometry />
         <MeshTransmissionMaterial {...materialProps} />
       </mesh>
     </group>
