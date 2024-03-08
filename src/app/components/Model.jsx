@@ -7,8 +7,8 @@ export default function Model () {
   const mesh = useRef()
 
   useFrame(() => {
-    mesh.current.rotation.x += 0.005
-    mesh.current.rotation.y += 0.005
+    mesh.current.rotation.x += 0.003
+    mesh.current.rotation.y += 0.003
   })
 
   const materialProps = useControls({
@@ -20,27 +20,52 @@ export default function Model () {
     backside: { value: true }
   })
 
+  const lineHeight = 0.66 // Adjust the line height as needed
+
   return (
     <group>
       <Text
-        fontSize={0.5}
+        fontSize={0.28}
         color={'#fff'}
-        letterSpacing={-0.05}
-        font='fonts/NHaasGroteskTXPro-55Rg.ttf'
-        position={[0, 0.25, -0.5]}
+        font='fonts/NHaasGroteskTXPro-65Md.ttf'
+        position={[-0.64, 1 * lineHeight, -0.5]} // First text above
       >
         hey. im alex.
       </Text>
       <Text
-        fontSize={0.5}
+        fontSize={0.28}
         color={'#fff'}
-        letterSpacing={-0.05}
-        font='fonts/NHaasGroteskTXPro-55Rg.ttf'
-        position={[0, -0.25, -0.5]}
+        font='fonts/NHaasGroteskTXPro-65Md.ttf'
+        position={[0.44, 0.5 * lineHeight, -0.5]} // Second text above
       >
-       ( designer + dev )
+        i&apos;m a (designer)
       </Text>
-      <mesh ref={mesh} scale={1.5}>
+      <Text
+        fontSize={0.28}
+        color={'#fff'}
+        font='fonts/NHaasGroteskTXPro-65Md.ttf'
+        position={[0, 0, -0.5]} // Central text
+      >
+        & &lt;/developer&gt; based
+      </Text>
+      <Text
+        fontSize={0.28}
+        fontWeight={200}
+        color={'#fff'}
+        font='fonts/NHaasGroteskTXPro-65Md.ttf'
+        position={[-1.32, -0.5 * lineHeight, -0.5]} // First text below
+      >
+        in
+      </Text>
+      <Text
+        fontSize={0.28}
+        color={'#fff'}
+        font='fonts/NHaasGroteskTXPro-65Md.ttf'
+        position={[-0.13, -1 * lineHeight, -0.5]} // Second text below
+      >
+        stockholm, sweden.
+      </Text>
+      <mesh ref={mesh} scale={1.6}>
         <boxGeometry />
         <MeshTransmissionMaterial {...materialProps} />
       </mesh>
