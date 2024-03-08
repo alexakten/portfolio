@@ -78,7 +78,7 @@ export default function Model () {
       >
         stockholm, sweden.
       </Text>
-      <mesh ref={mesh} scale={1.8}>
+      <mesh ref={mesh} scale={1.6}>
         <torusGeometry />
         <MeshTransmissionMaterial {...materialProps} />
       </mesh>
