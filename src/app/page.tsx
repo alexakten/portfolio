@@ -25,15 +25,14 @@ export default function Home() {
     <main
       style={{ userSelect: "none", height: "100svh" }}
       className={`flex relative flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-3 xs:px-10 py-6 ${
-        theme === "light"
-          ? "bg-slate-100 text-black"
-          : "bg-black text-white"
+        theme === "light" ? "bg-slate-100 text-black" : "bg-black text-white"
       }`}
     >
       {/* ——————————————————————————————————————————————————————————————————— */}
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
       {/* ——————————————————————————————————————————————————————————————————— */}
-      <Scene />
+        <Scene />
+
       {/* <div className="px-4 font-medium text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1>
           hey. i’m alex.

@@ -20,28 +20,29 @@ export default function Model () {
     backside: { value: true }
   })
 
-  const lineHeight = 0.66 // Adjust the line height as needed
+  const fontSize = 0.18
+  const lineHeight = 0.44// Adjust the line height as needed
 
   return (
     <group>
       <Text
-        fontSize={0.28}
+        fontSize={fontSize}
         color={'#fff'}
         font='fonts/NHaasGroteskTXPro-65Md.ttf'
-        position={[-0.60, 1 * lineHeight, -0.5]} // First text above
+        position={[-0.39, 1 * lineHeight, -0.5]} // First text above
       >
         hey. i&apos;m alex.
       </Text>
       <Text
-        fontSize={0.28}
+        fontSize={fontSize}
         color={'#fff'}
         font='fonts/NHaasGroteskTXPro-65Md.ttf'
-        position={[0.44, 0.5 * lineHeight, -0.5]} // Second text above
+        position={[0.29, 0.5 * lineHeight, -0.5]} // Second text above
       >
         i&apos;m a (designer)
       </Text>
       <Text
-        fontSize={0.28}
+        fontSize={fontSize}
         color={'#fff'}
         font='fonts/NHaasGroteskTXPro-65Md.ttf'
         position={[0, 0, -0.5]} // Central text
@@ -49,19 +50,19 @@ export default function Model () {
         & &lt;/developer&gt; based
       </Text>
       <Text
-        fontSize={0.28}
+        fontSize={fontSize}
         fontWeight={200}
         color={'#fff'}
         font='fonts/NHaasGroteskTXPro-65Md.ttf'
-        position={[-1.32, -0.5 * lineHeight, -0.5]} // First text below
+        position={[-0.84, -0.5 * lineHeight, -0.5]} // First text below
       >
         in
       </Text>
       <Text
-        fontSize={0.28}
+        fontSize={fontSize}
         color={'#fff'}
         font='fonts/NHaasGroteskTXPro-65Md.ttf'
-        position={[-0.13, -1 * lineHeight, -0.5]} // Second text below
+        position={[-0.075, -1 * lineHeight, -0.5]} // Second text below
       >
         stockholm, sweden.
       </Text>
