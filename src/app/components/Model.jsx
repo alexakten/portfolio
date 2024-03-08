@@ -1,10 +1,13 @@
 import { MeshTransmissionMaterial, Text } from '@react-three/drei'
 import { useFrame, useThree } from '@react-three/fiber'
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
+
 import { useControls } from 'leva'
 
 export default function Model () {
   const mesh = useRef()
+  const [scale, setScale] = useState(1.5); // Starting scale
+
 
   useFrame(() => {
     mesh.current.rotation.x += 0.003
@@ -29,11 +32,34 @@ export default function Model () {
     backside: true
   }
 
+   // Define breakpoints and corresponding scales
+   const breakpoints = [
+    { width: 1200, groupScale: 1.5 },
+    { width: 992, groupScale: 1.5 },
+    { width: 768, groupScale: 1.5 },
+    { width: 576, groupScale: 1.5 },
+    { width: 0, groupScale: 3 }, // default to the smallest size
+  ];
+
+    // Update scale based on window width
+    useEffect(() => {
+      function updateScale() {
+        const width = window.innerWidth;
+        const activeBreakpoint = breakpoints.find(breakpoint => width >= breakpoint.width) || breakpoints[breakpoints.length - 1];
+        setScale(activeBreakpoint.groupScale);
+      }
+  
+      window.addEventListener('resize', updateScale);
+      updateScale(); // Initial call
+  
+      return () => window.removeEventListener('resize', updateScale);
+    }, []);
+
   const fontSize = 0.18
   const lineHeight = 0.45 // Adjust the line height as needed
 
   return (
-    <group scale={1.5}>
+    <group scale={scale}>
       <Text
         fontSize={fontSize}
         color={'#fff'}

@@ -31,7 +31,7 @@ export default function Home() {
       {/* ——————————————————————————————————————————————————————————————————— */}
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
       {/* ——————————————————————————————————————————————————————————————————— */}
-        <Scene />
+      <Scene />
 
       {/* <div className="px-4 font-medium text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1>
