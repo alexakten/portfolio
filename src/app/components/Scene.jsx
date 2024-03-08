@@ -5,9 +5,7 @@ import Model from '@/app/components/Model'
 
 export default function Scene () {
   return (
-    <Canvas
-      style={{ backgroundColor: '#000', width: '100%', height: '100%' }}
-    >
+    <Canvas orthographic camera={{ zoom: 200, position: [0, 0, 100] }}>
       <ambientLight intensity={1} position={[0, 3, 2]} />
       <Model />
     </Canvas>

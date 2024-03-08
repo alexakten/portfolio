@@ -32,34 +32,11 @@ export default function Model () {
     backside: true
   }
 
-   // Define breakpoints and corresponding scales
-   const breakpoints = [
-    { height: 1200, groupScale: 1.8 },
-    { height: 992, groupScale: 1.8 },
-    { height: 768, groupScale: 1.5 },
-    { heiht: 576, groupScale: 0.8 },
-    { height: 0, groupScale: 3 }, // default to the smallest size
-  ];
-
-    // Update scale based on window width
-    useEffect(() => {
-      function updateScale() {
-        const width = window.innerWidth;
-        const activeBreakpoint = breakpoints.find(breakpoint => width >= breakpoint.width) || breakpoints[breakpoints.length - 1];
-        setScale(activeBreakpoint.groupScale);
-      }
-  
-      window.addEventListener('resize', updateScale);
-      updateScale(); // Initial call
-  
-      return () => window.removeEventListener('resize', updateScale);
-    }, []);
-
   const fontSize = 0.18
   const lineHeight = 0.45 // Adjust the line height as needed
 
   return (
-    <group scale={scale}>
+    <group scale={0.95}>
       <Text
         fontSize={fontSize}
         color={'#fff'}
