@@ -62,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
   };
 
   return (
-    <nav className="flex justify-between relative">
+    <nav className="flex justify-between items-start relative">
       <Link href={"/"}>
         <svg
           ref={svgRef}
