@@ -28,9 +28,9 @@ export default function Model () {
         fontSize={0.28}
         color={'#fff'}
         font='fonts/NHaasGroteskTXPro-65Md.ttf'
-        position={[-0.64, 1 * lineHeight, -0.5]} // First text above
+        position={[-0.60, 1 * lineHeight, -0.5]} // First text above
       >
-        hey. im alex.
+        hey. i&apos;m alex.
       </Text>
       <Text
         fontSize={0.28}
