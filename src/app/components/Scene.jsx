@@ -6,7 +6,7 @@ import { Environment } from '@react-three/drei'
 
 export default function Scene () {
   return (
-    <Canvas>
+    <Canvas style={{ width: '100vw', height: '100vh' }}>
       <ambientLight intensity={1} position={[0, 3, 2]} />
       {/* <Environment preset='dawn' /> */}
       <Model />
