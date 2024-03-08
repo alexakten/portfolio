@@ -7,7 +7,6 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
-  
   const svgRef = useRef<SVGSVGElement | null>(null); // Added type for ref
 
   useEffect(() => {
@@ -62,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
   };
 
   return (
-    <nav className="flex justify-between items-start relative">
+    <nav className="flex justify-between items-start">
       <Link href={"/"}>
         <svg
           ref={svgRef}
@@ -115,76 +114,77 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
           {theme === "light" ? "[ ◖ dark ]" : "[ ● light ]"}
         </button>
       </div> */}
-
-      <button
-        aria-label="menu"
-        onClick={handleClick}
-        className="flex flex-col justify-center items-center z-50" // Keep the button in its place
-      >
-        <span
-          className={`block transition-all duration-300 ease-out 
+      <div className="relative">
+        <button
+          aria-label="menu"
+          onClick={handleClick}
+          className="flex flex-col relative justify-center items-center z-50" // Keep the button in its place
+        >
+          <span
+            className={`block transition-all duration-300 ease-out 
       h-0.5 w-6 rounded-sm ${
         isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
       } ${theme === "light" ? "bg-black" : "bg-white"}`} // Change color based on theme
-        ></span>
-        <span
-          className={`block transition-all duration-300 ease-out 
+          ></span>
+          <span
+            className={`block transition-all duration-300 ease-out 
       h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"} ${
-            theme === "light" ? "bg-black" : "bg-white"
-          }`} // Change color based on theme
-        ></span>
-        <span
-          className={`block transition-all duration-300 ease-out 
+              theme === "light" ? "bg-black" : "bg-white"
+            }`} // Change color based on theme
+          ></span>
+          <span
+            className={`block transition-all duration-300 ease-out 
       h-0.5 w-6 rounded-sm ${
         isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
       } ${theme === "light" ? "bg-black" : "bg-white"}`} // Change color based on theme
-        ></span>
-      </button>
+          ></span>
+        </button>
 
-      {/* Menu items container */}
-      <div
-        className={`${
-          isOpen ? "flex" : "hidden"
-        } gap-2 absolute font-medium flex-col items-end rounded-md z-40`}
-        style={{ top: "100%", right: "0" }} // Position the menu below the button
-      >
-        <a
-          href="https://www.instagram.com/alexakten/"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* Menu items container */}
+        <div
+          className={`${
+            isOpen ? "flex" : "hidden"
+          } gap-2 absolute font-medium flex-col items-end rounded-md z-40`}
+          style={{ top: "2rem", right: "0" }} // Position the menu below the button
         >
-          <button type="button" className="hover:-translate-x-1">
-            instagram
-          </button>
-        </a>
-        <a
-          href="https://www.threads.net/@alexakten"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button type="button" className="hover:-translate-x-1">
-            threads
-          </button>
-        </a>
-        <a
-          href="https://twitter.com/alexakten"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button type="button" className="hover:-translate-x-1">
-            twitter
-          </button>
-        </a>
-        <Link href="/blog">
-          <button type="button" className="hover:-translate-x-1">
-            blog
-          </button>
-        </Link>
-        <a href="mailto:alex.akten@outlook.com">
-          <button type="button" className="hover:-translate-x-1">
-            mail
-          </button>
-        </a>
+          <a
+            href="https://www.instagram.com/alexakten/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button type="button" className="hover:-translate-x-1">
+              instagram
+            </button>
+          </a>
+          <a
+            href="https://www.threads.net/@alexakten"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button type="button" className="hover:-translate-x-1">
+              threads
+            </button>
+          </a>
+          <a
+            href="https://twitter.com/alexakten"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button type="button" className="hover:-translate-x-1">
+              twitter
+            </button>
+          </a>
+          <Link href="/blog">
+            <button type="button" className="hover:-translate-x-1">
+              blog
+            </button>
+          </Link>
+          <a href="mailto:alex.akten@outlook.com">
+            <button type="button" className="hover:-translate-x-1">
+              mail
+            </button>
+          </a>
+        </div>
       </div>
     </nav>
   );
