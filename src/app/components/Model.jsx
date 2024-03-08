@@ -24,8 +24,8 @@ export default function Model () {
   // })
 
   const materialProps = {
-    thickness: 0.2,
-    roughness: 0,
+    thickness: 0.25,
+    roughness: 0.1,
     transmission: 1,
     ior: 1,
     chromaticAberration: 0.02,
@@ -36,7 +36,7 @@ export default function Model () {
   const lineHeight = 0.45 // Adjust the line height as needed
 
   return (
-    <group scale={0.95}>
+    <group scale={0.92}>
       <Text
         fontSize={fontSize}
         color={'#fff'}
