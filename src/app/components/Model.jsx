@@ -14,23 +14,23 @@ export default function Model () {
     mesh.current.rotation.y += 0.005
   })
 
-  const materialProps = useControls({
-    thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
-    roughness: { value: 0, min: 0, max: 1, step: 0.01 },
-    transmission: { value: 1, min: 0, max: 1, step: 0.1 },
-    ior: { value: 1, min: 0, max: 3, step: 0.01 },
-    chromaticAberration: { value: 0.02, min: 0, max: 1 },
-    backside: { value: true },
-  })
+  // const materialProps = useControls({
+  //   thickness: { value: 0.2, min: 0, max: 3, step: 0.05 },
+  //   roughness: { value: 0, min: 0, max: 1, step: 0.01 },
+  //   transmission: { value: 1, min: 0, max: 1, step: 0.1 },
+  //   ior: { value: 1, min: 0, max: 3, step: 0.01 },
+  //   chromaticAberration: { value: 0.02, min: 0, max: 1 },
+  //   backside: { value: true },
+  // })
 
-  // const materialProps = {
-  //   thickness: 0.25,
-  //   roughness: 0.05,
-  //   transmission: 1,
-  //   ior: 1,
-  //   chromaticAberration: 0.015,
-  //   backside: true
-  // }
+  const materialProps = {
+    thickness: 0.25,
+    roughness: 0.01,
+    transmission: 1,
+    ior: 1,
+    chromaticAberration: 0.015,
+    backside: true
+  }
 
   const fontSize = 0.18
   const lineHeight = 0.40 // Adjust the line height as needed
