@@ -157,12 +157,12 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
             </button>
           </a>
           <a
-            href="https://www.threads.net/@alexakten"
+            href="https://www.linkedin.com/in/alex-akt%C3%A9n-86bb18195/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button type="button" className="hover:-translate-x-1">
-              threads
+              linkedin
             </button>
           </a>
           <a

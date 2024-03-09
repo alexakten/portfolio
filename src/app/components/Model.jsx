@@ -6,8 +6,7 @@ import { useControls } from 'leva'
 
 export default function Model () {
   const mesh = useRef()
-  const [scale, setScale] = useState(1.5); // Starting scale
-
+  const [scale, setScale] = useState(1.5) // Starting scale
 
   useFrame(() => {
     mesh.current.rotation.x += 0.004
@@ -33,7 +32,7 @@ export default function Model () {
   }
 
   const fontSize = 0.18
-  const lineHeight = 0.40 // Adjust the line height as needed
+  const lineHeight = 0.4 // Adjust the line height as needed
 
   return (
     <group scale={0.88}>
