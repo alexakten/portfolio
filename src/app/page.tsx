@@ -25,7 +25,9 @@ export default function Home() {
     <main
       style={{ userSelect: "none", height: "100svh" }}
       className={`flex relative flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-3 xs:px-10 py-6 ${
-        theme === "light" ? "bg-slate-100 text-black" : "bg-black text-slate-100"
+        theme === "light"
+          ? "bg-slate-100 text-black"
+          : "bg-black text-slate-100"
       }`}
     >
       {/* ——————————————————————————————————————————————————————————————————— */}
@@ -96,6 +98,13 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 airbon
+              </a>
+              <a
+                href="https://textlock.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                textlock
               </a>
             </div>
           </div>
