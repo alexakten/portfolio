@@ -23,7 +23,7 @@ export default function Model () {
   // })
 
   const materialProps = {
-    thickness: 0.25,
+    thickness: 0.3,
     roughness: 0.01,
     transmission: 1,
     ior: 1,
