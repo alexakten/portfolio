@@ -2,6 +2,7 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import Model from '@/app/components/Model'
+import { Environment } from '@react-three/drei'
 
 export default function Scene () {
   return (

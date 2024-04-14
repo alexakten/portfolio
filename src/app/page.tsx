@@ -24,18 +24,17 @@ export default function Home() {
   return (
     <main
       style={{ userSelect: "none", height: "100svh" }}
-      className={`flex relative flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-3 xs:px-10 py-6 ${
-        theme === "light"
+      className={`flex relative flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-3 xs:px-10 py-6 ${theme === "light"
           ? "bg-slate-100 text-black"
           : "bg-black text-slate-100"
-      }`}
+        }`}
     >
       {/* ——————————————————————————————————————————————————————————————————— */}
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
       {/* ——————————————————————————————————————————————————————————————————— */}
-      <Scene />
+      {/* <Scene /> */}
 
-      {/* <div className="px-4 font-medium text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="px-4 font-medium text-3xl w-full xs:w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1>
           hey. i’m alex.
           <br />
@@ -44,7 +43,7 @@ export default function Home() {
           in <br />
           stockholm, sweden.
         </h1>
-      </div> */}
+      </div>
       {/* ——————————————————————————————————————————————————————————————————— */}
       <div className="font-medium flex justify-between items-end">
         <div className="grid gap-8 md:flex md:gap-8 md:flex-row md:grid-cols-1 items-end grid-cols-3">
