@@ -1,5 +1,6 @@
 import "./globals.css";
-import { ThemeProvider } from './components/ThemeContext';
+import { ThemeProvider } from "./components/ThemeContext";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "alex aktén",
@@ -14,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body>{children}</body>
+        <body>
+          {children}
+          <Analytics />
+        </body>
       </ThemeProvider>
     </html>
   );
