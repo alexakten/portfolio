@@ -2,28 +2,30 @@ import Project from "./components/Project";
 
 export default function Home() {
   return (
-    <main className="my-24 flex px-3 flex-col items-center bg-zinc-950 leading-[1.5] tracking-[-0.015rem] text-zinc-300">
-      <header className="w-full max-w-lg font-medium ">
-        <p>Alex Aktén</p>
-        <p className="font-normal opacity-70">Designer + Developer</p>
+    <main className="my-24 flex flex-col items-center bg-zinc-950 px-3 leading-[1.5] tracking-[-0.015rem] text-zinc-300">
+      <header className="w-full max-w-xl font-medium ">
+        <p className="bg-gradient-to-tr from-zinc-400 via-zinc-200 to-zinc-100 bg-clip-text text-transparent">
+          Alex Aktén
+        </p>
+        <p className="font-normal opacity-80">Design + Dev</p>
       </header>
 
-      <section className="mt-24 w-full max-w-lg font-medium ">
+      <section className="mt-24 w-full max-w-xl font-medium ">
         <p>About</p>
         <p className="mt-5 font-normal opacity-80">
-          Hey. I&apos;m Alex — an indie maker based in Stockholm. I&apos;m passionate about building small startups that allow me to optimize for my lifestyle.
+          Hey. I&apos;m Alex — an indie maker based in Stockholm. I&apos;m
+          passionate about building small startups that allow me to optimize for
+          my lifestyle.
           <br /> <br />
-
           Right now I&apos;m working on Redpoint, a product for climbers.
-
         </p>
       </section>
 
-      <section className="mt-24 w-full max-w-lg font-medium ">
+      <section className="mt-24 w-full max-w-xl font-medium ">
         <p>Projects</p>
         <Project
           name="Kindred Lab"
-          description="Design and development agency."
+          description="Design and web development agency."
           link="https://www.kindredlab.io"
         />
         <Project
@@ -38,7 +40,7 @@ export default function Home() {
         />
         <Project
           name="Mendly"
-          description="Minimalistic writing tool."
+          description="Minimalistic writing interface."
           link="https://www.mendly.app"
         />
         <Project
@@ -58,11 +60,9 @@ export default function Home() {
         />
       </section>
 
-      <section className="mt-24 w-full max-w-lg font-medium ">
+      <footer className="mt-24 w-full max-w-xl font-medium ">
         <p>Contact</p>
-        <div className="grid gap-3 grid-cols-1 sm:grid-cols-3">
-
-
+        <div className="grid grid-cols-1 gap-x-3 sm:grid-cols-3">
           <Project
             name="Instagram"
             description="@alexakten"
@@ -89,7 +89,7 @@ export default function Home() {
             link="mailto:alex.akten@outlook.com"
           />
         </div>
-      </section>
+      </footer>
     </main>
   );
 }
