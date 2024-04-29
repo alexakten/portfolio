@@ -2,17 +2,20 @@ import Project from "./components/Project";
 
 export default function Home() {
   return (
-    <main className="my-24 flex flex-col items-center bg-zinc-950 leading-[1.5] tracking-[-0.015rem] text-zinc-300">
+    <main className="my-24 flex px-3 flex-col items-center bg-zinc-950 leading-[1.5] tracking-[-0.015rem] text-zinc-300">
       <header className="w-full max-w-lg font-medium ">
         <p>Alex Aktén</p>
-        <p className="font-normal opacity-70">Indie Maker</p>
+        <p className="font-normal opacity-70">Designer + Developer</p>
       </header>
 
       <section className="mt-24 w-full max-w-lg font-medium ">
         <p>About</p>
         <p className="mt-5 font-normal opacity-80">
-          I work as a designer & developer at Kindred Lab. I&apos;m always tinkering
-          on some new project that interests me.
+          Hey. I&apos;m Alex — an indie maker based in Stockholm. I&apos;m passionate about building small startups that allow me to optimize for my lifestyle.
+          <br /> <br />
+
+          Right now I&apos;m working on Redpoint, a product for climbers.
+
         </p>
       </section>
 
@@ -25,7 +28,7 @@ export default function Home() {
         />
         <Project
           name="Redpoint"
-          description="One card for all climbing gyms."
+          description="One membership for all climbing gyms."
           link="https://www.redpoint.top"
         />
         <Project
@@ -53,6 +56,39 @@ export default function Home() {
           description="Text on phone lockscreen."
           link="https://textlock.vercel.app/"
         />
+      </section>
+
+      <section className="mt-24 w-full max-w-lg font-medium ">
+        <p>Contact</p>
+        <div className="grid gap-3 grid-cols-1 sm:grid-cols-3">
+
+
+          <Project
+            name="Instagram"
+            description="@alexakten"
+            link="https://www.instagram.com/alexakten/"
+          />
+          <Project
+            name="Twitter"
+            description="@alexakten"
+            link="https://twitter.com/alexakten"
+          />
+          <Project
+            name="LinkedIn"
+            description="Alex Aktén"
+            link="https://www.linkedin.com/in/alex-akt%C3%A9n-86bb18195/"
+          />
+          <Project
+            name="Phone"
+            description="+46 709 13 65 14"
+            link="tel:+46709136514"
+          />
+          <Project
+            name="Email"
+            description="alex.akten@outlook.com"
+            link="mailto:alex.akten@outlook.com"
+          />
+        </div>
       </section>
     </main>
   );
