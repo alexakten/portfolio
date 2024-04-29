@@ -11,7 +11,7 @@ export default function Home() {
       <section className="mt-24 w-full max-w-lg font-medium ">
         <p>About</p>
         <p className="mt-5 font-normal opacity-80">
-          I work as a designer & developer at Kindred Lab. I'm always tinkering
+          I work as a designer & developer at Kindred Lab. I&apos;m always tinkering
           on some new project that interests me.
         </p>
       </section>
