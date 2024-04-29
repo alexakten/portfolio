@@ -50,7 +50,7 @@ export default function Home() {
         />
         <Project
           name="Tasktree"
-          description="Tree structure task manager"
+          description="Tree structure task manager."
           link="https://www.tasktree.co"
         />
         <Project
