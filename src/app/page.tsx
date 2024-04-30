@@ -1,13 +1,14 @@
+import Contact from "./components/Contact";
 import Project from "./components/Project";
 
 export default function Home() {
   return (
-    <main className="my-24 flex flex-col items-center bg-zinc-950 px-3 leading-[1.5] tracking-[-0.015rem] text-zinc-300">
-      <header className="w-full max-w-xl font-medium ">
+    <main className="my-24 flex flex-col items-center bg-zinc-950 px-4 leading-[1.5] tracking-[-0.015rem] text-zinc-300">
+      <header className="w-full max-w-xl font-medium leading-[1.2] ">
         <p className="bg-gradient-to-tr from-zinc-400 via-zinc-200 to-zinc-100 bg-clip-text text-transparent">
           Alex Aktén
         </p>
-        <p className="font-normal opacity-80">Design + Dev</p>
+        <p className="text-sm font-normal opacity-80">Designer + Dev</p>
       </header>
 
       <section className="mt-24 w-full max-w-xl font-medium ">
@@ -63,27 +64,27 @@ export default function Home() {
       <footer className="mt-24 w-full max-w-xl font-medium ">
         <p>Contact</p>
         <div className="grid grid-cols-1 gap-x-3 sm:grid-cols-3">
-          <Project
+          <Contact
             name="Instagram"
             description="@alexakten"
             link="https://www.instagram.com/alexakten/"
           />
-          <Project
+          <Contact
             name="Twitter"
             description="@alexakten"
             link="https://twitter.com/alexakten"
           />
-          <Project
+          <Contact
             name="LinkedIn"
             description="Alex Aktén"
             link="https://www.linkedin.com/in/alex-akt%C3%A9n-86bb18195/"
           />
-          <Project
+          <Contact
             name="Phone"
             description="+46 709 13 65 14"
             link="tel:+46709136514"
           />
-          <Project
+          <Contact
             name="Email"
             description="alex.akten@outlook.com"
             link="mailto:alex.akten@outlook.com"
