@@ -8,7 +8,7 @@ export default function Home() {
         <p className="bg-gradient-to-tr from-zinc-400 via-zinc-200 to-zinc-100 bg-clip-text text-transparent">
           Alex Aktén
         </p>
-        <p className="text-sm font-normal opacity-80">Designer + dev</p>
+        <p className="text-sm font-normal opacity-80">Designer/Dev</p>
       </header>
 
       <section className="mt-24 w-full max-w-xl font-medium ">
