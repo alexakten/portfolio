@@ -31,7 +31,7 @@ export default function Home() {
         />
         <Project
           name="Redpoint"
-          description="One membership for all climbing gyms."
+          description="Turn first-time climbers into regulars."
           link="https://www.redpoint.top"
         />
         <Project
