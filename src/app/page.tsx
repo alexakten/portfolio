@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <main className="my-24 flex flex-col items-center bg-zinc-950 px-4 leading-[1.5] tracking-[-0.015rem] text-zinc-300">
       <header className="w-full max-w-xl font-medium leading-[1.2] ">
-        <p className="bg-gradient-to-tr from-zinc-400 via-zinc-200 to-zinc-100 bg-clip-text text-transparent">
+        {/* <p className="bg-gradient-to-tr from-zinc-400 via-zinc-200 to-zinc-100 bg-clip-text text-transparent">
+          Alex Aktén
+        </p> */}
+        <p>
           Alex Aktén
         </p>
         <p className="text-sm font-normal opacity-80">Designer/Dev</p>
@@ -35,9 +38,9 @@ export default function Home() {
           link="https://www.redpoint.top"
         />
         <Project
-          name="Solarity"
-          description="8-bit solar system focus timer."
-          link="https://solarity-alexakten.vercel.app/"
+          name="Airbon"
+          description="Climate tech startup."
+          link="https://www.airbon.co"
         />
         <Project
           name="Mendly"
@@ -45,10 +48,11 @@ export default function Home() {
           link="https://www.mendly.app"
         />
         <Project
-          name="Airbon"
-          description="Regenerative farming tool."
-          link="https://www.airbon.co"
+          name="Solarity"
+          description="8-bit solar system focus timer."
+          link="https://solarity-alexakten.vercel.app/"
         />
+
         <Project
           name="Tasktree"
           description="Tree structure task manager."
