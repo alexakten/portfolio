@@ -33,14 +33,14 @@ export default function Home() {
           link="https://www.kindredlab.io"
         />
         <Project
-          name="Redpoint"
-          description="Turn first-time climbers into regulars."
-          link="https://www.redpoint.top"
-        />
-        <Project
           name="Airbon"
           description="Climate tech startup."
           link="https://www.airbon.co"
+        />
+        <Project
+          name="Redpoint"
+          description="Turn first-time climbers into regulars."
+          link="https://www.redpoint.top"
         />
         <Project
           name="Mendly"
