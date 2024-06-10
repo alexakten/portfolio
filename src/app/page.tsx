@@ -34,7 +34,7 @@ export default function Home() {
         />
         <Project
           name="Airbon"
-          description="Climate tech startup."
+          description="Climate tech startup for agriculture."
           link="https://www.airbon.co"
         />
         <Project
