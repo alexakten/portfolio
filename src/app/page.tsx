@@ -18,10 +18,10 @@ export default function Home() {
         <p>About</p>
         <p className="mt-5 font-normal opacity-80">
           Hey. I&apos;m Alex — an indie maker based in Stockholm. I&apos;m
-          passionate about building small startups that allow me to optimize for
+          passionate about building small startups that solve interesting problems and allow me to optimize for
           my lifestyle.
           <br /> <br />
-          Right now I&apos;m working on Redpoint, a product for climbers.
+          Right now I&apos;m working on Airbon, a climate tech startup.
         </p>
       </section>
 
