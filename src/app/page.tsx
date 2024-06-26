@@ -57,12 +57,11 @@ export default function Home() {
           description="8-bit solar system focus timer."
           link="https://solarity-alexakten.vercel.app/"
         />
-
-        <Project
+        {/* <Project
           name="Tasktree"
           description="Tree structure task manager."
           link="https://www.tasktree.co"
-        />
+        /> */}
         <Project
           name="Textlock"
           description="Text on phone lockscreen."
