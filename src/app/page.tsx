@@ -28,6 +28,11 @@ export default function Home() {
       <section className="mt-24 w-full max-w-xl font-medium ">
         <p>Projects</p>
         <Project
+          name="First House"
+          description="Helping startups raise their next round."
+          link="https://www.thefirsthouse.se"
+        />
+        <Project
           name="Kindred Lab"
           description="Design and web development agency."
           link="https://www.kindredlab.io"
