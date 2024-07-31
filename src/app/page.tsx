@@ -62,11 +62,11 @@ export default function Home() {
           description="Tree structure task manager."
           link="https://www.tasktree.co"
         /> */}
-        <Project
+        {/* <Project
           name="Textlock"
           description="Text on phone lockscreen."
           link="https://textlock.vercel.app/"
-        />
+        /> */}
       </section>
 
       <footer className="mt-24 w-full max-w-xl font-medium ">
