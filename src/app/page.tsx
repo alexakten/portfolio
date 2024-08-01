@@ -8,9 +8,7 @@ export default function Home() {
         {/* <p className="bg-gradient-to-tr from-zinc-400 via-zinc-200 to-zinc-100 bg-clip-text text-transparent">
           Alex Aktén
         </p> */}
-        <p>
-          Alex Aktén
-        </p>
+        <p>Alex Aktén</p>
         <p className="text-sm font-normal opacity-80">Designer/Dev</p>
       </header>
 
@@ -18,8 +16,8 @@ export default function Home() {
         <p>About</p>
         <p className="mt-5 font-normal opacity-80">
           Hey. I&apos;m Alex — an indie maker based in Stockholm. I&apos;m
-          passionate about building small startups that solve interesting problems and allow me to optimize for
-          my lifestyle.
+          passionate about building small startups that solve interesting
+          problems and allow me to optimize for my lifestyle.
           <br /> <br />
           Right now I&apos;m working on Airbon, a climate tech startup.
         </p>
@@ -43,14 +41,14 @@ export default function Home() {
           link="https://www.airbon.co"
         />
         <Project
+          name="Strōm"
+          description="Minimalistic writing interface."
+          link="https://use-strom.vercel.app"
+        />
+        <Project
           name="Redpoint"
           description="Turn first-time climbers into regulars."
           link="https://www.redpoint.top"
-        />
-        <Project
-          name="Mendly"
-          description="Minimalistic writing interface."
-          link="https://www.mendly.app"
         />
         <Project
           name="Solarity"
