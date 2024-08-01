@@ -53,7 +53,7 @@ export default function Home() {
         <Project
           name="Solarity"
           description="8-bit solar system focus timer."
-          link="https://solarity-bed8-alexaktens-projects.vercel.app/focus"
+          link="https://use-solarity.vercel.app/focus"
         />
         {/* <Project
           name="Tasktree"
